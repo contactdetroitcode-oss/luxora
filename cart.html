@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="LUXORA - Votre panier de parfums d'exception.">
+<title>LUXORA | Panier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+<div class="container nav-container">
+
+<a href="index.html" class="logo">LUXORA</a>
+
+<nav class="nav">
+<a href="index.html">Accueil</a>
+<a href="shop.html">Boutique</a>
+<a href="index.html#collections">Collections</a>
+<a href="index.html#about">À propos</a>
+</nav>
+
+<div class="nav-actions">
+
+<button type="button" class="nav-icon search-btn" id="searchBtn" aria-label="Rechercher">⌕</button>
+
+<a href="cart.html" class="cart-btn active" aria-label="Panier">
+🛍<span id="cartCount">0</span>
+</a>
+
+<button type="button" class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+
+</div>
+
+</div>
+</header>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+
+<div class="search-container">
+
+<button type="button" class="close-search" id="closeSearch" aria-label="Fermer">×</button>
+
+<p>RECHERCHER UN PARFUM</p>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Ex: Oud Royal..."
+autocomplete="off"
+>
+
+<div class="search-results" id="searchResults"></div>
+
+</div>
+
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<button type="button" class="mobile-close" id="mobileClose" aria-label="Fermer">×</button>
+
+<a href="index.html">Accueil</a>
+<a href="shop.html">Boutique</a>
+<a href="index.html#collections">Collections</a>
+<a href="index.html#about">À propos</a>
+<a href="cart.html">Panier</a>
+
+</div>
+
+<main>
+
+<section class="cart-page section">
+
+<div class="container">
+
+<div class="cart-header">
+
+<div>
+
+<p class="section-label">LUXORA SHOPPING</p>
+
+<h1>Votre panier</h1>
+
+<p>
+Retrouvez ici les fragrances que vous avez sélectionnées.
+</p>
+
+</div>
+
+<a href="shop.html" class="btn btn-outline">
+Continuer mes achats
+</a>
+
+</div>
+
+<div class="cart-layout" id="cartLayout">
+
+<div class="cart-items-wrapper">
+
+<div class="cart-items-header">
+
+<span>PRODUIT</span>
+<span>QUANTITÉ</span>
+<span>TOTAL</span>
+
+</div>
+
+<div class="cart-items" id="cartItems"></div>
+
+</div>
+
+<aside class="cart-summary">
+
+<div class="cart-summary-header">
+
+<p class="section-label">RÉCAPITULATIF</p>
+
+<h2>Votre commande</h2>
+
+</div>
+
+<div class="summary-row">
+
+<span>Sous-total</span>
+
+<strong id="cartSubtotal">0 DH</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>Livraison</span>
+
+<strong id="cartShipping">30 DH</strong>
+
+</div>
+
+<div class="summary-line"></div>
+
+<div class="summary-total">
+
+<span>Total</span>
+
+<strong id="cartTotal">0 DH</strong>
+
+</div>
+
+<p class="cart-shipping-note">
+Livraison standard partout au Maroc.
+</p>
+
+<a href="checkout.html" class="btn btn-dark cart-checkout-btn" id="checkoutBtn">
+Passer la commande
+</a>
+
+<div class="cart-payment">
+
+<span>✓</span>
+
+<div>
+<strong>Paiement à la livraison</strong>
+<small>Simple, rapide et sécurisé</small>
+</div>
+
+</div>
+
+</aside>
+
+</div>
+
+<div class="empty-cart" id="emptyCart">
+
+<div class="empty-cart-icon">🛍</div>
+
+<p class="section-label">VOTRE PANIER EST VIDE</p>
+
+<h2>Votre prochaine fragrance vous attend.</h2>
+
+<p>
+Découvrez notre collection de parfums d'exception et trouvez
+la signature qui vous correspond.
+</p>
+
+<a href="shop.html" class="btn btn-dark">
+Découvrir la collection
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section cart-benefits">
+
+<div class="container">
+
+<div class="cart-benefits-grid">
+
+<div class="cart-benefit">
+<span>01</span>
+<div>
+<h3>Livraison rapide</h3>
+<p>Expédition de votre commande partout au Maroc.</p>
+</div>
+</div>
+
+<div class="cart-benefit">
+<span>02</span>
+<div>
+<h3>Paiement à la livraison</h3>
+<p>Payez simplement lors de la réception.</p>
+</div>
+</div>
+
+<div class="cart-benefit">
+<span>03</span>
+<div>
+<h3>Service LUXORA</h3>
+<p>Une expérience pensée dans chaque détail.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<div class="container newsletter-inner">
+
+<div>
+
+<p class="section-label">LUXORA PRIVÉ</p>
+
+<h2>Entrez dans notre univers.</h2>
+
+<p>
+Recevez nos nouveautés, collections privées et offres exclusives.
+</p>
+
+</div>
+
+<form class="newsletter-form" id="newsletterForm">
+
+<input
+type="email"
+id="newsletterEmail"
+placeholder="Votre adresse email"
+required
+>
+
+<button type="submit" class="btn btn-light">
+S'inscrire
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div class="footer-brand">
+
+<a href="index.html" class="logo">LUXORA</a>
+
+<p>L'art du parfum, réinventé avec élégance.</p>
+
+<div class="social-links">
+
+<a href="#" aria-label="Instagram">Instagram</a>
+
+<a href="#" aria-label="Facebook">Facebook</a>
+
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Boutique</h4>
+
+<a href="shop.html">Tous les parfums</a>
+<a href="shop.html?category=homme">Homme</a>
+<a href="shop.html?category=femme">Femme</a>
+<a href="shop.html?category=unisex">Unisex</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>LUXORA</h4>
+
+<a href="index.html#about">Notre histoire</a>
+<a href="#">Livraison</a>
+<a href="#">Retours</a>
+<a href="#">FAQ</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Contact</h4>
+
+<a href="#">Nous contacter</a>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">WhatsApp</a>
+
+</div>
+
+</div>
+
+<div class="container footer-bottom">
+
+<p>© 2026 LUXORA. Tous droits réservés.</p>
+
+<p>Luxury Perfume Store</p>
+
+</div>
+
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+const cartItems=document.getElementById("cartItems");
+const cartLayout=document.getElementById("cartLayout");
+const emptyCart=document.getElementById("emptyCart");
+const cartSubtotal=document.getElementById("cartSubtotal");
+const cartShipping=document.getElementById("cartShipping");
+const cartTotal=document.getElementById("cartTotal");
+const checkoutBtn=document.getElementById("checkoutBtn");
+
+const SHIPPING_COST=30;
+
+function getCurrentCart(){
+
+try{
+
+const stored=localStorage.getItem("luxoraCart");
+
+if(!stored)return [];
+
+const parsed=JSON.parse(stored);
+
+return Array.isArray(parsed)?parsed:[];
+
+}catch(error){
+
+return [];
+
+}
+
+}
+
+function saveCurrentCart(cart){
+
+localStorage.setItem("luxoraCart",JSON.stringify(cart));
+
+if(typeof updateCartCount==="function"){
+updateCartCount();
+}
+
+}
+
+function formatPrice(price){
+
+return `${Number(price).toLocaleString("fr-FR")} DH`;
+
+}
+
+function renderCart(){
+
+const cart=getCurrentCart();
+
+if(typeof products==="undefined")return;
+
+if(!cart.length){
+
+cartLayout.style.display="none";
+emptyCart.classList.add("show");
+
+cartSubtotal.textContent="0 DH";
+cartShipping.textContent="0 DH";
+cartTotal.textContent="0 DH";
+
+return;
+
+}
+
+const validCart=cart.filter(item=>{
+
+return products.some(product=>product.id===Number(item.id));
+
+});
+
+if(validCart.length!==cart.length){
+
+saveCurrentCart(validCart);
+
+}
+
+if(!validCart.length){
+
+cartLayout.style.display="none";
+emptyCart.classList.add("show");
+
+return;
+
+}
+
+cartLayout.style.display="grid";
+emptyCart.classList.remove("show");
+
+let subtotal=0;
+
+cartItems.innerHTML=validCart.map(item=>{
+
+const product=products.find(
+product=>product.id===Number(item.id)
+);
+
+const quantity=Math.max(
+1,
+Math.min(10,Number(item.quantity)||1)
+);
+
+const itemTotal=product.price*quantity;
+
+subtotal+=itemTotal;
+
+return `
+
+<article class="cart-item" data-id="${product.id}">
+
+<div class="cart-product">
+
+<a
+href="product.html?id=${product.id}"
+class="cart-product-image"
+>
+
+<img
+src="${product.image}"
+alt="${product.name}"
+loading="lazy"
+>
+
+</a>
+
+<div class="cart-product-info">
+
+<p>${product.category}</p>
+
+<h3>
+<a href="product.html?id=${product.id}">
+${product.name}
+</a>
+</h3>
+
+<span>${product.volume||"100ml"}</span>
+
+<p class="cart-product-notes">
+${product.notes||""}
+</p>
+
+<button
+type="button"
+class="remove-cart-item"
+data-remove="${product.id}"
+>
+Supprimer
+</button>
+
+</div>
+
+</div>
+
+<div class="cart-quantity">
+
+<button
+type="button"
+class="quantity-btn"
+data-minus="${product.id}"
+aria-label="Diminuer"
+>
+−
+</button>
+
+<span>${quantity}</span>
+
+<button
+type="button"
+class="quantity-btn"
+data-plus="${product.id}"
+aria-label="Augmenter"
+>
++
+</button>
+
+</div>
+
+<div class="cart-item-total">
+
+<strong>${formatPrice(itemTotal)}</strong>
+
+<small>${formatPrice(product.price)} / unité</small>
+
+</div>
+
+</article>
+
+`;
+
+}).join("");
+
+const shipping=subtotal>0?SHIPPING_COST:0;
+const total=subtotal+shipping;
+
+cartSubtotal.textContent=formatPrice(subtotal);
+cartShipping.textContent=formatPrice(shipping);
+cartTotal.textContent=formatPrice(total);
+
+bindCartEvents();
+
+}
+
+function bindCartEvents(){
+
+cartItems.querySelectorAll("[data-minus]").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+changeQuantity(
+Number(button.dataset.minus),
+-1
+);
+
+});
+
+});
+
+cartItems.querySelectorAll("[data-plus]").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+changeQuantity(
+Number(button.dataset.plus),
+1
+);
+
+});
+
+});
+
+cartItems.querySelectorAll("[data-remove]").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+removeProduct(
+Number(button.dataset.remove)
+);
+
+});
+
+});
+
+}
+
+function changeQuantity(id,direction){
+
+const cart=getCurrentCart();
+
+const item=cart.find(
+item=>Number(item.id)===id
+);
+
+if(!item)return;
+
+const currentQuantity=Number(item.quantity)||1;
+
+const newQuantity=currentQuantity+direction;
+
+if(newQuantity<1){
+
+removeProduct(id);
+
+return;
+
+}
+
+item.quantity=Math.min(10,newQuantity);
+
+saveCurrentCart(cart);
+
+renderCart();
+
+}
+
+function removeProduct(id){
+
+const cart=getCurrentCart();
+
+const product=products.find(
+product=>product.id===id
+);
+
+const filtered=cart.filter(
+item=>Number(item.id)!==id
+);
+
+saveCurrentCart(filtered);
+
+renderCart();
+
+if(product&&typeof showToast==="function"){
+
+showToast(`${product.name} supprimé du panier`);
+
+}
+
+}
+
+checkoutBtn.addEventListener("click",event=>{
+
+const cart=getCurrentCart();
+
+if(!cart.length){
+
+event.preventDefault();
+
+if(typeof showToast==="function"){
+showToast("Votre panier est vide");
+}
+
+return;
+
+}
+
+});
+
+renderCart();
+
+</script>
+
+</body>
+</html>

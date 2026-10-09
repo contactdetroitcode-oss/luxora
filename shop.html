@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Découvrez la collection LUXORA : parfums premium pour homme, femme et unisex. Trouvez votre signature olfactive.">
+<meta name="theme-color" content="#080807">
+<title>Boutique | LUXORA Parfums Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="container nav-container">
+<a href="index.html" class="logo">LUXORA</a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="shop.html" class="active">Boutique</a>
+<a href="index.html#collections">Collections</a>
+<a href="index.html#about">À propos</a>
+</nav>
+<div class="nav-actions">
+<button type="button" class="nav-icon search-btn" id="searchBtn" aria-label="Rechercher">⌕</button>
+<a href="cart.html" class="cart-btn" aria-label="Panier">🛍 <span id="cartCount">0</span></a>
+<button type="button" class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+</div>
+</div>
+</header>
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+<div class="search-container">
+<button type="button" class="close-search" id="closeSearch" aria-label="Fermer la recherche">×</button>
+<p>RECHERCHER UN PARFUM</p>
+<input type="search" id="searchInput" placeholder="Ex : Oud Royal..." autocomplete="off" aria-label="Rechercher un parfum">
+<div class="search-results" id="searchResults"></div>
+</div>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+<button type="button" class="mobile-close" id="mobileClose" aria-label="Fermer le menu">×</button>
+<a href="index.html">Accueil</a>
+<a href="shop.html">Boutique</a>
+<a href="index.html#collections">Collections</a>
+<a href="index.html#about">À propos</a>
+<a href="cart.html">Panier</a>
+</div>
+<main>
+<section class="shop-hero">
+<div class="shop-hero-overlay"></div>
+<div class="container shop-hero-content">
+<p class="section-label">L'UNIVERS LUXORA</p>
+<h1>Notre Boutique</h1>
+<p>Des fragrances d'exception pour révéler votre signature.</p>
+</div>
+</section>
+<section class="shop-section section">
+<div class="container">
+<div class="shop-top">
+<div>
+<p class="section-label">LA COLLECTION</p>
+<h2>Trouvez votre parfum.</h2>
+<p class="shop-intro">Explorez nos créations et choisissez la fragrance qui vous ressemble.</p>
+</div>
+<p class="shop-count" id="shopCount">12 FRAGRANCES</p>
+</div>
+<div class="shop-controls">
+<div class="category-filters" id="categoryFilters">
+<button type="button" class="filter-btn active" data-category="all">Tout</button>
+<button type="button" class="filter-btn" data-category="homme">Homme</button>
+<button type="button" class="filter-btn" data-category="femme">Femme</button>
+<button type="button" class="filter-btn" data-category="unisex">Unisex</button>
+</div>
+<div class="shop-tools">
+<label class="shop-search">
+<span>⌕</span>
+<input type="search" id="shopSearch" placeholder="Rechercher un parfum..." aria-label="Rechercher dans la boutique">
+</label>
+<select id="sortProducts" aria-label="Trier les produits">
+<option value="featured">Sélection LUXORA</option>
+<option value="price-asc">Prix croissant</option>
+<option value="price-desc">Prix décroissant</option>
+<option value="name-asc">Nom A à Z</option>
+<option value="name-desc">Nom Z à A</option>
+</select>
+</div>
+</div>
+<div class="products-grid shop-products" id="shopProducts"></div>
+<div class="empty-shop" id="emptyShop">
+<div class="empty-shop-icon">⌕</div>
+<h3>Aucun parfum trouvé</h3>
+<p>Essayez un autre nom ou choisissez une autre collection.</p>
+<button type="button" class="btn btn-dark" id="resetFilters">Réinitialiser les filtres</button>
+</div>
+</div>
+</section>
+<section class="shop-banner">
+<div class="shop-banner-overlay"></div>
+<div class="container shop-banner-content">
+<p class="section-label">UNE SIGNATURE INOUBLIABLE</p>
+<h2>Le luxe se ressent.<br>Il ne s'explique pas.</h2>
+<p>Découvrez des fragrances élégantes qui laissent une impression durable.</p>
+<a href="index.html#collections" class="btn btn-light">Explorer les collections</a>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="benefits-grid">
+<div class="benefit-card"><span>✦</span><h3>Sélection Premium</h3><p>Des fragrances choisies avec exigence pour une expérience unique.</p></div>
+<div class="benefit-card"><span>◇</span><h3>Livraison Soignée</h3><p>Chaque commande est préparée avec attention et élégance.</p></div>
+<div class="benefit-card"><span>♢</span><h3>Commande Simple</h3><p>Choisissez vos parfums et finalisez votre commande facilement.</p></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a href="index.html" class="logo">LUXORA</a>
+<p>L'art du parfum, réinventé avec élégance.</p>
+<div class="social-links">
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+</div>
+</div>
+<div class="footer-column">
+<h4>Boutique</h4>
+<a href="shop.html">Tous les parfums</a>
+<a href="shop.html?category=homme">Homme</a>
+<a href="shop.html?category=femme">Femme</a>
+<a href="shop.html?category=unisex">Unisex</a>
+</div>
+<div class="footer-column">
+<h4>LUXORA</h4>
+<a href="index.html#about">Notre histoire</a>
+<a href="#">Livraison</a>
+<a href="#">Retours</a>
+<a href="#">FAQ</a>
+</div>
+<div class="footer-column">
+<h4>Contact</h4>
+<a href="#">Nous contacter</a>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="https://wa.me/212710937826" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 LUXORA. Tous droits réservés.</p>
+<p>Luxury Perfume Store</p>
+</div>
+</footer>
+<script src="products.js"></script>
+<script src="script.js"></script>
+<script>
+const shopProducts=document.getElementById("shopProducts");
+const shopSearch=document.getElementById("shopSearch");
+const sortProducts=document.getElementById("sortProducts");
+const shopCount=document.getElementById("shopCount");
+const emptyShop=document.getElementById("emptyShop");
+const resetFilters=document.getElementById("resetFilters");
+const filterButtons=document.querySelectorAll(".filter-btn");
+let activeCategory="all";
+let searchTerm="";
+function formatPrice(price){return Number(price).toLocaleString("fr-FR")+" DH"}
+function renderShopProducts(){
+if(typeof products==="undefined"||!shopProducts)return;
+let filtered=[...products];
+if(activeCategory!=="all")filtered=filtered.filter(product=>product.category===activeCategory);
+if(searchTerm){filtered=filtered.filter(product=>(product.name+" "+product.category+" "+product.notes+" "+product.description).toLowerCase().includes(searchTerm))}
+const sort=sortProducts?sortProducts.value:"featured";
+if(sort==="price-asc")filtered.sort((a,b)=>a.price-b.price);
+if(sort==="price-desc")filtered.sort((a,b)=>b.price-a.price);
+if(sort==="name-asc")filtered.sort((a,b)=>a.name.localeCompare(b.name,"fr"));
+if(sort==="name-desc")filtered.sort((a,b)=>b.name.localeCompare(a.name,"fr"));
+if(sort==="featured")filtered.sort((a,b)=>Number(b.featured)-Number(a.featured)||a.id-b.id);
+if(shopCount)shopCount.textContent=filtered.length+" FRAGRANCE"+(filtered.length>1?"S":"");
+if(emptyShop)emptyShop.classList.toggle("show",filtered.length===0);
+shopProducts.style.display=filtered.length?"grid":"none";
+shopProducts.innerHTML=filtered.map(product=>{
+const badge=product.badge?`<span class="product-badge">${product.badge}</span>`:"";
+const oldPrice=product.oldPrice?`<del>${formatPrice(product.oldPrice)}</del>`:"";
+return `<article class="product-card"><div class="product-image"><a href="product.html?id=${product.id}" class="product-image-link"><img src="${product.image}" alt="${product.name}" loading="lazy">${badge}</a><button type="button" class="product-cart" data-add="${product.id}" aria-label="Ajouter ${product.name} au panier">+</button><a href="product.html?id=${product.id}" class="product-view">Découvrir</a></div><a href="product.html?id=${product.id}" class="product-info-link"><div class="product-info"><p class="product-category">${product.category==="homme"?"HOMME":product.category==="femme"?"FEMME":"UNISEX"}</p><h3>${product.name}</h3><p class="product-notes">${product.notes}</p><div class="product-price"><strong>${formatPrice(product.price)}</strong>${oldPrice}</div></div></a></article>`
+}).join("");
+shopProducts.querySelectorAll(".product-card").forEach((card,index)=>{card.style.transitionDelay=Math.min(index*45,270)+"ms";requestAnimationFrame(()=>card.classList.add("visible"))});
+shopProducts.querySelectorAll("[data-add]").forEach(button=>button.addEventListener("click",event=>{event.preventDefault();event.stopPropagation();if(typeof addToCart==="function")addToCart(Number(button.dataset.add),1);button.classList.add("added");setTimeout(()=>button.classList.remove("added"),500)}));
+}
+filterButtons.forEach(button=>button.addEventListener("click",()=>{activeCategory=button.dataset.category;filterButtons.forEach(item=>item.classList.toggle("active",item===button));renderShopProducts()}));
+if(shopSearch)shopSearch.addEventListener("input",()=>{searchTerm=shopSearch.value.trim().toLowerCase();renderShopProducts()});
+if(sortProducts)sortProducts.addEventListener("change",renderShopProducts);
+if(resetFilters)resetFilters.addEventListener("click",()=>{activeCategory="all";searchTerm="";if(shopSearch)shopSearch.value="";if(sortProducts)sortProducts.value="featured";filterButtons.forEach(button=>button.classList.toggle("active",button.dataset.category==="all"));renderShopProducts()});
+const params=new URLSearchParams(window.location.search);
+const requestedCategory=params.get("category");
+if(["homme","femme","unisex"].includes(requestedCategory)){activeCategory=requestedCategory;filterButtons.forEach(button=>button.classList.toggle("active",button.dataset.category===activeCategory))}
+renderShopProducts();
+</script>
+</body>
+</html>

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="LUXORA — Maison de parfums premium. Découvrez nos fragrances élégantes pour homme, femme et unisex."
+>
+
+<meta
+    name="keywords"
+    content="parfum, parfums premium, parfum homme, parfum femme, parfum unisex, LUXORA"
+>
+
+<meta
+    name="author"
+    content="LUXORA"
+>
+
+<meta
+    name="theme-color"
+    content="#080807"
+>
+
+<title>
+LUXORA | Maison de Parfums Premium
+</title>
+
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+>
+
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            LUXORA
+        </a>
+
+
+        <nav
+            class="nav"
+            aria-label="Navigation principale"
+        >
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                Accueil
+            </a>
+
+            <a href="shop.html">
+                Boutique
+            </a>
+
+            <a href="#collections">
+                Collections
+            </a>
+
+            <a href="#about">
+                À propos
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button
+                type="button"
+                class="nav-icon search-btn"
+                id="searchBtn"
+                aria-label="Rechercher"
+            >
+                ⌕
+            </button>
+
+
+            <a
+                href="cart.html"
+                class="cart-btn"
+                aria-label="Panier"
+            >
+
+                🛍
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </a>
+
+
+            <button
+                type="button"
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<div
+    class="search-overlay"
+    id="searchOverlay"
+    aria-hidden="true"
+>
+
+    <div class="search-container">
+
+        <button
+            type="button"
+            class="close-search"
+            id="closeSearch"
+            aria-label="Fermer la recherche"
+        >
+            ×
+        </button>
+
+
+        <p>
+            RECHERCHER UN PARFUM
+        </p>
+
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Ex : Oud Royal..."
+            autocomplete="off"
+            aria-label="Rechercher un parfum"
+        >
+
+
+        <div
+            class="search-results"
+            id="searchResults"
+        ></div>
+
+    </div>
+
+</div>
+
+
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <button
+        type="button"
+        class="mobile-close"
+        id="mobileClose"
+        aria-label="Fermer le menu"
+    >
+        ×
+    </button>
+
+
+    <a href="index.html">
+        Accueil
+    </a>
+
+    <a href="shop.html">
+        Boutique
+    </a>
+
+    <a href="#collections">
+        Collections
+    </a>
+
+    <a href="#about">
+        À propos
+    </a>
+
+    <a href="cart.html">
+        Panier
+    </a>
+
+</div>
+
+
+
+<main>
+
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <p class="section-label">
+            L'ART DU PARFUM
+        </p>
+
+
+        <h1>
+            Une fragrance.
+            <br>
+            <span>
+                Une signature.
+            </span>
+        </h1>
+
+
+        <p>
+            Découvrez une collection de parfums d'exception créés pour révéler votre personnalité et laisser une impression inoubliable.
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="shop.html"
+                class="btn btn-primary"
+            >
+                Découvrir la collection
+            </a>
+
+
+            <a
+                href="#collections"
+                class="btn btn-outline"
+            >
+                Explorer
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-scroll">
+        SCROLL
+    </div>
+
+</section>
+
+
+
+<section
+    class="collections section"
+    id="collections"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                NOS COLLECTIONS
+            </p>
+
+
+            <h2>
+                Trouvez votre signature
+            </h2>
+
+
+            <p>
+                Des fragrances soigneusement sélectionnées pour chaque personnalité.
+            </p>
+
+        </div>
+
+
+
+        <div class="collections-grid">
+
+
+            <a
+                href="shop.html?category=homme"
+                class="collection-card"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=90"
+                    alt="Collection parfum homme"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <span class="collection-label">
+                        COLLECTION
+                    </span>
+
+
+                    <h3>
+                        Homme
+                    </h3>
+
+
+                    <p>
+                        Intense · Élégant · Charismatique
+                    </p>
+
+
+                    <strong>
+                        Découvrir →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="shop.html?category=femme"
+                class="collection-card"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?auto=format&fit=crop&w=1200&q=90"
+                    alt="Collection parfum femme"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <span class="collection-label">
+                        COLLECTION
+                    </span>
+
+
+                    <h3>
+                        Femme
+                    </h3>
+
+
+                    <p>
+                        Floral · Sensuel · Raffiné
+                    </p>
+
+
+                    <strong>
+                        Découvrir →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a
+                href="shop.html?category=unisex"
+                class="collection-card"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=1200&q=90"
+                    alt="Collection parfum unisex"
+                    loading="lazy"
+                >
+
+
+                <div class="collection-content">
+
+                    <span class="collection-label">
+                        COLLECTION
+                    </span>
+
+
+                    <h3>
+                        Unisex
+                    </h3>
+
+
+                    <p>
+                        Moderne · Unique · Intemporel
+                    </p>
+
+
+                    <strong>
+                        Découvrir →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="featured section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                SÉLECTION LUXORA
+            </p>
+
+
+            <h2>
+                Nos fragrances iconiques
+            </h2>
+
+
+            <p>
+                Découvrez les parfums les plus appréciés de notre collection.
+            </p>
+
+        </div>
+
+
+        <div
+            class="products-grid"
+            id="featuredProducts"
+        ></div>
+
+
+        <div
+            class="section-button"
+            style="text-align:center;margin-top:50px"
+        >
+
+            <a
+                href="shop.html"
+                class="btn btn-light"
+            >
+                Voir toute la collection
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="shop-banner">
+
+    <div class="shop-banner-overlay"></div>
+
+
+    <div class="container shop-banner-content">
+
+        <p class="section-label">
+            L'EXPÉRIENCE LUXORA
+        </p>
+
+
+        <h2>
+            Le parfum est invisible.
+            <br>
+            Le souvenir reste.
+        </h2>
+
+
+        <p>
+            Une fragrance peut raconter une histoire sans prononcer un seul mot.
+        </p>
+
+
+        <a
+            href="shop.html"
+            class="btn btn-light"
+        >
+            Explorer LUXORA
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<section
+    class="about section"
+    id="about"
+>
+
+    <div class="container about-grid">
+
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1200&q=90"
+                alt="LUXORA parfumerie"
+                loading="lazy"
+            >
+
+        </div>
+
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                NOTRE HISTOIRE
+            </p>
+
+
+            <h2>
+                L'élégance
+                <br>
+                dans chaque note.
+            </h2>
+
+
+            <p>
+                LUXORA est née d'une passion pour l'art de la parfumerie et les fragrances qui racontent une histoire.
+            </p>
+
+
+            <p>
+                Nous sélectionnons des compositions élégantes, modernes et intemporelles pour vous accompagner dans chaque moment.
+            </p>
+
+
+            <div class="stats">
+
+
+                <div class="stat">
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <span>
+                        Fragrances
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        100%
+                    </strong>
+
+                    <span>
+                        Sélection Premium
+                    </span>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <strong>
+                        24/7
+                    </strong>
+
+                    <span>
+                        Univers LUXORA
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="benefits-grid">
+
+
+            <div class="benefit-card">
+
+                <span>
+                    ✦
+                </span>
+
+                <h3>
+                    Sélection Premium
+                </h3>
+
+                <p>
+                    Des fragrances choisies avec exigence pour une expérience unique.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>
+                    ◇
+                </span>
+
+                <h3>
+                    Livraison Soignée
+                </h3>
+
+                <p>
+                    Chaque commande est préparée avec attention et élégance.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <span>
+                    ♢
+                </span>
+
+                <h3>
+                    Paiement Sécurisé
+                </h3>
+
+                <p>
+                    Une expérience d'achat simple, rapide et sécurisée.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="newsletter">
+
+    <div class="container newsletter-inner">
+
+
+        <div>
+
+            <p class="section-label">
+                LUXORA JOURNAL
+            </p>
+
+
+            <h2>
+                Entrez dans notre univers.
+            </h2>
+
+
+            <p>
+                Recevez nos nouveautés, collections et offres exclusives.
+            </p>
+
+        </div>
+
+
+
+        <form
+            class="newsletter-form"
+            id="newsletterForm"
+        >
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Votre adresse email"
+                autocomplete="email"
+                aria-label="Votre adresse email"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="btn btn-light"
+            >
+                S'inscrire
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                LUXORA
+            </a>
+
+
+            <p>
+                L'art du parfum, réinventé avec élégance.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Boutique
+            </h4>
+
+
+            <a href="shop.html">
+                Tous les parfums
+            </a>
+
+
+            <a href="shop.html?category=homme">
+                Homme
+            </a>
+
+
+            <a href="shop.html?category=femme">
+                Femme
+            </a>
+
+
+            <a href="shop.html?category=unisex">
+                Unisex
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                LUXORA
+            </h4>
+
+
+            <a href="#about">
+                Notre histoire
+            </a>
+
+
+            <a href="#">
+                Livraison
+            </a>
+
+
+            <a href="#">
+                Retours
+            </a>
+
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <a href="#">
+                Nous contacter
+            </a>
+
+
+            <a href="#">
+                Instagram
+            </a>
+
+
+            <a href="#">
+                Facebook
+            </a>
+
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 LUXORA. Tous droits réservés.
+        </p>
+
+
+        <p>
+            Luxury Perfume Store
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="products.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
